@@ -392,11 +392,10 @@ int main(int argc, char* argv[])
 	//all of our operations will be performed within this loop
 
 	client();
-	/*sprintf(buffer, "%s", "l");
+	sprintf(buffer, "%s", "l");
 	send_message(buffer);
 	sprintf(buffer, "%s", "s");
 	send_message(buffer);
-	close(sockfd);*/
 	
 	while (1) {
 
@@ -444,7 +443,7 @@ int main(int argc, char* argv[])
 			trackFilteredObject(xG, yG, thresholdG, cameraFeed);
 		
 		//Client Socket part
-		sprintf(buffer, "%s", drum(xR, yR, xB, yB, xG, yG);
+		sprintf(buffer, "%s", drum(xR, yR, xB, yB, xG, yG));
 		send_message(buffer);
 		bzero(buffer,256);
 		
